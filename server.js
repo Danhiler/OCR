@@ -34,10 +34,10 @@ app.post('/getTextFromImage', (req, res) => {
                 })
                 .then(function (result) {
                     console.log(result.text)
-                    res.status(200).json({
+                    res.status(200).send({
                         text: result.text + " made by Dan Hilerowicz"
                     })
-                    process.exit(0)
+                    // process.exit(0)
                 })
         }
     } catch (err) {
