@@ -1,4 +1,5 @@
 var Tesseract = require('tesseract.js')
+var cors = require('cors')
 const express = require('express')
 var bodyParser = require('body-parser')
 const app = express()
